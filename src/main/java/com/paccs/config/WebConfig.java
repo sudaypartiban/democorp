@@ -1,4 +1,4 @@
-package com.lynas.config;
+package com.paccs.config;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 import org.springframework.context.annotation.Bean;
@@ -21,14 +21,14 @@ import java.util.Set;
 @EnableWebMvc
 @EnableScheduling
 @EnableAsync
-@ComponentScan("com.lynas")
+@ComponentScan("com.paccs")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
 
     @Bean
     public ServletContextTemplateResolver templateResolver() {
         ServletContextTemplateResolver resolver = new ServletContextTemplateResolver();
-        resolver.setPrefix("/");
+        resolver.setPrefix("/WEB-INF/views/");
         resolver.setSuffix(".html");
         resolver.setTemplateMode("HTML5");
         resolver.setCacheable(false);
