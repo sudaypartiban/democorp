@@ -129,6 +129,7 @@
             </thread-pool>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:bean-validation:1.0"/>
+		Sudy
         <subsystem xmlns="urn:jboss:domain:datasources:4.0">
             <datasources>
 				<datasource jndi-name="java:jboss/paccs" enabled="true" use-java-context="true" pool-name="paccs" use-ccm="true">
